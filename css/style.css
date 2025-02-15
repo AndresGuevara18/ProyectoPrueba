@@ -1,0 +1,146 @@
+/*estilos generales*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*body*/
+body {
+    padding: 3rem 0;/*top y bottom 3rem*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: rgb(0, 158, 255);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/*Titulo e imagen*/
+.eventoTitulo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+    gap: 20px;
+}
+
+/*titulo*/
+.eventoTitulo h1{
+    color: #ababab;
+    font-size: 1.8rem;
+}
+
+/*imagen*/
+.eventoTitulo img{
+    width: 40px;
+}
+
+/*formulario*/
+.formulario {
+    background-color: #fff; 
+    width: 280px;
+    padding: 1rem;
+    border-radius: 0.8rem;
+    margin: 0 auto; /* Centrado horizontal */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 1); /* Sombra clara */
+}
+
+/*formulario etiqueta*/
+.formulario form{
+    display: flex;
+    flex-direction: column;/*para que sea en columna*/
+    align-items: center;
+    justify-content: center;
+    gap: 10px;    
+}
+
+/*id formulario nombre y fecha*/
+#nombreEvento, #fechaEvento{
+    padding: 0.2rem;
+    border: 2px solid rgb(0, 158, 255);
+    border-radius: 1rem;
+    width: 100%;
+}
+
+/*id de boton agregar*/
+#agregar{
+    padding: 0.5rem;
+    background-color: rgb(0, 158, 255);
+    border: 0;
+    border-radius: 15px;
+    width: 100%;
+    color: #fff;
+    cursor: pointer;
+}
+
+/*lista eventos*/
+.listaEventos2{
+    display: flex;
+    flex-direction: column;/*para que sea en columna*/
+    margin-top: 2rem;
+    padding: 1.2rem;
+    background-color: #fff;
+    border-radius: 1rem;
+    gap: 20px;/*separar*/  
+    margin-bottom: 2rem; 
+    box-shadow: 0 0 10px rgba(255, 255, 255, 1);
+}
+
+/*return en JS, clase  evento*/
+.evento{
+    border: 2px solid rgb(0, 158, 255);
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    gap: 20px;
+    padding: 0.4rem 1rem;
+}
+
+/*div dias que tiene dias faltantes y texto*/
+.dias{
+    width: 40px;
+    display: flex;
+    flex-direction: column;/*para que sea en columna*/
+    align-items: center;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.diasFaltantes{
+    color: #2C8757;
+    font-size: 1.8rem;
+}
+
+/*clases nombre y fecha*/
+.nombreEvento, .fechaEvento{
+    display: flex;
+    flex-direction: column;/*para que sea en columna*/
+    align-items: center;
+    width: 100px;
+    overflow-x: auto; /* Scroll horizontal */
+    overflow-y: auto; /* Scroll vertical */   
+}
+
+/*boto eliminar*/
+.acciones button{
+    background-color: #7CCF3C;
+    padding: 10px;
+    color: #125526;
+    outline: none;
+    border: 0;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/*footer*/
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+   
